@@ -1,0 +1,36 @@
+import { ArticleHead, Button } from '../../components'
+export const title = 'Build A Blog With Astro'
+export const date = 'January 6, 2023'
+export const description = 'Learn Astro by building a blog'
+export const thumbnailUrl = '/astro-blog-thumbnail.jpeg'
+
+<ArticleHead 
+  title={title} 
+  date={date} 
+  description={description}
+  thumbnailUrl={thumbnailUrl}
+/>
+
+# {title}
+
+<div>
+  This is a blog post about <strong>astro build</strong>. <br />
+  We'll learn how to build a blog with Astro and why it's better then  the 
+</div>
+
+<br />
+
+### This is a Markdown sub-heading
+
+We just used a `###` subheading in our blog post.
+
+```
+  \\ This a code block
+  const doSomething = () => {
+    return console.log('Hello There!')
+  }
+```
+
+<div>
+  here, I'm using a component inside my MarkDown file: {<Button text={'Click Me!'} />}
+</div>
